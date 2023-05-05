@@ -1,0 +1,580 @@
+@font-face {
+    font-family:'spotify';
+    src: url(Spotify-Font/GothamBold.ttf);
+}
+body{
+    
+    margin: 0px;
+    font-family:'spotify';
+
+}
+header{
+    height: 395px;
+    width: 100%;
+    background-image: linear-gradient(45deg, rgb(204, 47, 175), rgb(89, 160, 246));
+    transition: background-color 0.3;
+
+}
+.nava >ul{
+
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.nava > ul > li{
+    float:left;
+}
+.navbar
+{
+    background-color: transparent;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 80px;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+    z-index: 2;
+    
+
+}
+.logono
+{
+    background-color:transparent;
+    display: inline-block;
+    justify-content: center;
+    align-self: center;
+    margin: auto 0;
+    height: 43px;
+    width: 160px;
+    margin-left: 167px;
+
+}
+.alogono
+{
+    display: flex;
+    background-image:url(imgs/Spotify_Logo_RGB_White.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    
+}
+.nav1
+{
+    display: inline-block;
+    margin-right: 180px;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navul
+{
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    list-style:none;
+  
+}
+.lif{
+   
+    font-weight: 700;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.seperator1
+{
+
+    display: flex;
+    align-items: center;
+    height:80px;
+    color: white !important;
+    padding: 0 15px;
+    
+}
+.nava
+{
+    padding: 28px 17px;
+    text-decoration: none;
+    display: block;
+    font-weight: 700;
+    word-spacing: 0px; 
+    color: white; 
+    font-size: 14.8px;
+}
+.nava:hover
+{
+    color: #1ed760;
+}
+.navbar-scrolled{
+    
+    background-color: black;
+    opacity: 0.6;
+    position: fixed;
+    z-index: 10;
+}
+.headwords{
+    width: 100%;
+    height: 280px;
+    position: relative;
+    top: 90px;
+}
+
+.w1{
+    font-weight: 800;
+    color: white;
+    font-size: 4rem;
+    position: relative;
+    top: 20px;
+    left: 512px;
+    letter-spacing: -0.06em;
+    font-family: Helvetica,Arial,sans-serif;
+   
+}
+.w2{
+    color: white;
+    font-size:1.4rem;
+    position: relative;
+    top: 31px;
+    left: 270px;
+    letter-spacing: -0.06em;
+    word-spacing: -0.2em;
+    width: 200px;
+   
+}
+.pre1{
+    width: 300px;
+}
+main{
+    width: 100%;
+    height: 7265px;
+    box-sizing: border-box;
+   
+}
+.left{
+    height: 800px;
+    width:450px;
+    display: inline-block;
+ 
+   position: sticky;
+   top: 80px;
+   box-sizing: border-box;
+   padding-left: 120px;
+   padding-top: 20px;
+  
+}
+.right{
+    width: 900px;
+    height: 5700px;
+    display: inline-block;
+  
+    position: absolute;
+    z-index: 1;
+    box-sizing: border-box;
+} 
+h1{
+    font-family: arial black;
+    font-size: 2.5rem;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 30px;
+}
+a:hover{
+    color: #1ed760;
+}
+a:link{
+    color: black;
+}
+.ul1{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    font-size: 16px;
+}
+.sevleft{
+  
+    width: 450px;
+    height: 1000px;
+    display: inline-block;
+}
+.sevright{
+    width: 500px;
+    height: 1000px;
+    display: inline-block;
+  
+    position: absolute;
+    
+}
+.ul2{
+    list-style-type: circle;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 35px;
+    font-size: 16px;
+    margin-left: 30px;
+}
+.nine1{
+box-shadow: rgb(0 0 0 / 30%) 0px 2px 6px;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(248, 248, 248);
+    height: 150px;
+    box-sizing: border-box;
+}
+.nine2{
+    box-shadow: rgb(0 0 0 / 30%) 0px 2px 6px;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: rgb(248, 248, 248);
+        height: 180px;
+        box-sizing: border-box;
+    }
+.ul3{
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 19px;
+    color: rgb(186, 182, 182);
+    
+}
+
+
+.footer
+{   grid-area: foot;
+    background-color: black;
+    width:100%;
+    height: 400px;
+    padding: 80px 0 50px;
+}
+footer
+{
+    background-color: black;
+    padding: auto 0;
+    max-height: 500px;
+    overflow: hidden;
+    
+
+}
+.nav2
+{
+    background-color: black;
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 75px; 
+    max-width: 1170px;
+    
+    
+
+    
+}
+
+
+.logo2
+{
+    background-color:black;
+    display: inline-block;
+    justify-content: center;
+    align-self: flex-start;
+    margin: 0 15px;
+    height: 40px;
+    width: 132px;
+}
+.alogo
+{
+    display: flex;
+    background-image:url(imgs/black\ logo2.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    
+    
+}
+
+.sites
+{
+    width: 50%;
+    flex: 0 0 auto;
+    flex-direction: row;
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 15px 0 0 25px;
+}
+a
+{
+    text-decoration: none;
+}
+.sites dl{
+    list-style: none;
+    margin: 0px auto;
+    color: #919496;
+    font-size:13px; 
+    word-spacing: 0px;
+    height: 345px;
+    font-weight: 900;
+    
+}
+.sites dl dd 
+{
+    padding: 0;
+    margin: 20px 0;
+    list-style: none;
+    color: white;
+    
+    
+}
+.sites dl dd a
+{
+    color: white;
+    font-weight: 550;
+    font-size:15px; 
+    word-spacing: 0px;
+}
+.social
+{
+    margin: 15px 0 0 auto;
+    
+}
+.social ul
+{
+    display: inline-flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0 15px 0 auto;
+    padding: 0;
+}
+.social ul li 
+{
+    display:flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+
+}
+.social ul li .insta
+{
+    background-image: url(imgs/insta\ \(2\).png);
+    background-size: cover;
+    width: 54px;
+    height: 54px;
+    display: flex;
+}
+.social ul li .insta .instain
+{
+    justify-content: center;
+    align-items: center;
+    background-image: url(imgs/insta\ \(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 54px;
+    height: 54px;
+}
+.social ul li .twitter 
+{
+    background-image: url(imgs/twiter\ \(1\)\ \(2\).png);
+    background-size: cover;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    margin:0 15px;
+}
+.social ul li .twitter .twitterin
+{
+    justify-content: center;
+    align-items: center;
+    background-image: url(imgs/twiter\ \(1\)\ \(1\).png);
+    background-size: cover;
+    width: 54px;
+    height: 54px;
+}
+.social ul li .face
+{
+    background-image: url(imgs/face\ \(2\).png);
+    background-size: cover;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    
+}
+.social ul li .face .facein
+{
+    justify-content: center;
+    align-items: center;
+    background-image: url(imgs/face\ \(1\).png);
+    background-size: cover;
+    width: 54px;
+    height: 54px;
+}
+
+.lang
+{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin: 0 15px;
+    width: 100%;
+    font-size: 12px;
+}
+.endline 
+{
+    display: inline-flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    width: 100%;
+}
+.endline .left
+{
+    justify-content: flex-start;
+}
+.endline .left ul
+{
+    display: flex;
+    word-spacing: 0px;
+    list-style: none;
+}
+.endline .left ul li
+{
+    margin: 0 10px;
+    font-size: 12px;
+}
+.endlinea , .langa
+{
+    color: #919496;
+}
+.endline .righte
+{
+    justify-content: flex-end;
+    font-size: 14px;
+    color: white;
+    margin-right: 15px;
+}
+span{
+    word-spacing: 0px;
+    color: #919496;
+    font-size: 12px;
+}
+/* hover for insta face twitter */
+
+    .instain:hover
+    {
+        background-image: url(imgs/insta\ \(3\).png);
+        background-repeat: no-repeat;
+        width: 500px;
+        height: 500px;
+    }
+    .social ul li .insta .instain:hover
+    {
+        background-image:url(imgs/insta3.png);
+    }
+    
+    .social ul li .twitter .twitterin:hover
+    {
+    
+    background-image: url(imgs/twiter3.png);
+    }
+    .social ul li .face .facein:hover
+    {
+    background-image:url(imgs/face3.png);
+    }
+
+.sites dl dd a:hover,.endlinea:hover , .langa:hover
+{
+    color: #1ed760;
+}
+span.lif{
+    color: white;
+}
+span.seperator2{
+    color: white;
+}
+main a{
+    color:rgb(84, 83, 83)
+}
+a:active{
+    color: red;
+}
+.right a:link{
+    color: black;
+    text-decoration: underline;
+    
+}
+.right a{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+ .right a:hover{
+    color:#1ed760
+ }
+ a:hover{
+   color: #1ed760;
+ }
+ .icon{
+ 
+    display: inline-block;
+    position: relative;
+    top: -9px;
+ }
+ .picon{
+    display: inline-block;
+    position: relative;
+    top: -14px;
+ }
+ .sub-content{
+    position: absolute;
+    top: 60px;
+    overflow: hidden;
+    background-color: rgb(255, 240, 240);
+    max-height: 0px;
+    z-index: 6;
+ }
+ .sub-content a{
+    color: rgb(22, 21, 21);
+    text-decoration: none;
+    padding: 30px 20px ;
+
+ }
+ .sub-drop{
+    padding: 0px;
+ }
+ .sub-drop ul{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+ }
+ .sub-drop ul li a{
+    display: inline-block;
+    padding: 10px 10px;
+    font:bold;
+
+ }
+ .sub-drop ul li a:hover{
+    color: #1ed760;
+ }
+ .nava:focus ~ .sub-content{
+    max-height: 400px;
+    transition: 0.5s ease-in;
+ }
+.right #nine  .nine1 a:link{
+    text-decoration: none;
+}
+.right #nine  .nine2 a:link{
+    text-decoration: none;
+}
+.active{
+    background-color: black;
+    color:blue;
+}
+
+
+
+
+
+
+
+

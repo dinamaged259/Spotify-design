@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="imgs/spotify1.png" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-in</title>
+</head>
+<body>
+    
+    <div class="root">
+        <div class="main">
+            <div class="header">
+                <div class="logo">
+                    <a href="premium.html">
+                        <img src="imgs/spotlogo.png" alt="">
+                    </a>
+                </div>
+                <div class="hr"></div>
+            </div>
+            
+            <div class="content">
+                <div class="contentcontainer">
+                    <div class="logincontainer">
+                        <p>To continue, log in to Spotify.</p>
+                        <button class="face">
+                            <div class="divin">
+                                <span><img class="facep" src="imgs/faceicon.png" alt=""></span>
+                                <p class="pin"> CONTINUE WITH FACEBOOK</p>
+                            </div>
+                        </button>
+                        <button class="apple">
+                            <div class="divin">
+                                <span><img class="applep" src="imgs/appleicon.png" alt=""></span>
+                                <p class="pin"> CONTINUE WITH APPLE</p>
+                            </div>
+                        </button>
+                        <button class="google">
+                            <div class="divin">
+                                <span ><img class="googlep" src="imgs/googleicon.png" alt=""></span>
+                                <p class="pin2"> CONTINUE WITH GOOGLE</p>
+                            </div>
+                        </button>
+                        <button class="phoneNumber">
+                            <div class="divin">
+                                <p class="pin2"> CONTINUE WITH PHONE NUMBER</p>
+                            </div>
+                        </button>
+                        <div class="seperator">
+                            <div class="hr"></div><span>OR</span><div class="hr"></div>
+                        </div>
+                        <div class="loginform">
+                            <form action=""  method="POST" >
+                            <div class="e">       
+                                <div class="etitle">
+                                    <label for="username">Email address or username</label>
+                                </div>    
+                                <input type="text" id="username" required placeholder="Email address or username"
+                                autocomplete="off">  <!--username-->
+                            </div>
+
+                            <div class="p">       
+                                <div class="ptitle">
+                                    <label for="password">Password</label required >
+                                </div>
+                                <input type="password" id="password" placeholder="Password">        <!--password-->
+                            </div>  
+                            
+                            <a class="forgot" href="">Forgot your password?</a>
+                            <div class="remembermeandmark">
+                                <div class="leftgroup">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="rememberme">
+                                        <label for="rememberme">Remember me
+                                            <!-- <span class="checkmark">
+                                                
+                                            </span>
+                                            <span class="checktext">
+                                                <p>Remember me</p>
+                                            </span> -->
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="rightgroup">
+                                    <button class="loginbutton" id="loginbuttonn"  type="button" >
+                                        <div>
+                                            <p>Log In</p>
+                                        </div>
+
+                                    </button>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                        <div class="hr"></div>
+                        <div class="signup">
+                            <p>Don't have an account?</p>
+                            <a class="signupbutton" href="signup.html">
+                                <span>SIGN UP FOR SPOTIFY</span>
+                                <!--after-->
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- 
+    <script>
+        var users = [
+    { username: 'amr', password: 123 },
+    { username: 'nour', password: 123 },
+    { username: 'dina', password: 123 },
+    { username: 'norhan', password: 123 },
+    { username: 'ahmed', password: 123 }
+
+];
+
+var button = document.getElementById('loginbuttonn');
+
+button.onclick = function() {
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value; 
+
+    for (var i = 0; i < users.length; i++) {
+    if(username == users[i].username && password == users[i].password) {
+        window.location.href='file:///home/amr/Documents/web/log%20in%20page/premium.html';
+        break;
+        }
+    }
+    
+}
+    </script> -->
+
+
+    <script src="login.js"></script>
+</body>
+</html>

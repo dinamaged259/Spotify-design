@@ -1,0 +1,317 @@
+@font-face {
+    font-family:'spotify';
+    src: url(Spotify-Font/GothamBold.ttf);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'spotify';
+}
+a
+{
+    text-decoration: none;
+}
+.hr
+{
+    height: 1px;
+    width: 100%;
+    background-color: rgb(202, 200, 200);
+
+}
+.main
+{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.header
+{
+    text-align: center;
+    padding: 25px 0 10px 0;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.header .logo
+{
+    padding-bottom: 20px;
+}
+.header img
+{
+    cursor: default;
+    /* margin-right:15px; */
+}
+.content
+{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.content .contentcontainer
+{
+    max-width: 450px;
+    width: 100%;
+}
+.logincontainer
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.logincontainer p
+{
+    text-align: center;
+    color: black;
+    font-size: 13px;
+}
+.logincontainer .face
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:450px;
+    height:48px;
+    border-radius:48px;
+    border: 1px solid #878787;
+    background-color:#1877F2;
+}
+
+
+
+.logincontainer .apple
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:450px;
+    height:48px;
+    border-radius:48px;
+    border: 1px solid #878787;
+    background-color :#000000E6;
+}
+
+.logincontainer .google
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:450px;
+    height:48px;
+    border-radius:48px;
+    border: none;
+    border: 1px solid #878787;
+    background-color: white;
+}
+
+.logincontainer .phoneNumber
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:450px;
+    height:48px;
+    border-radius:48px;
+    border: 1px solid #878787;
+    background-color: white;
+}
+
+
+.logincontainer .face:hover ,.logincontainer .apple:hover ,
+.logincontainer .google:hover ,.logincontainer .phoneNumber:hover 
+{
+    border:1px solid#000000;
+}
+
+.logincontainer .pin 
+{
+    color: white;
+}
+.logincontainer .pin2
+{
+    color: #6a6a6a;
+} 
+.logincontainer .pin ,.logincontainer .pin2
+{
+    display: inline-flex;
+    margin-left: 10px;
+    letter-spacing: 2px;
+}
+.divin
+{
+    display: flex;
+    align-items: center;
+}
+.facep
+{
+    border-radius: 2px;
+    transform: scale(.8);
+}
+.applep
+{
+    transform: scale(1.1);
+}
+.google
+{
+    background-color: noen;
+}
+
+
+
+
+
+.seperator
+{
+    display: inline-flex;
+    align-items: center ;
+    justify-content: center;
+    margin: 6px 0 15px 0;
+}
+.seperator span
+{
+    font-size: 12px;
+    margin: 0 20px;
+}
+.e ,.p
+{
+    padding-bottom: 16px;
+}
+.etitle ,.ptitle
+{
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+.e input ,.p input
+{
+    display:block;
+    width: 100%;
+    padding:14px;
+    border-radius: 4px;
+    border:0px;
+    box-shadow: inset 0 0 0 1px #878787;
+}
+.e input:hover ,.p input:hover
+{
+    outline:1px solid #6a6a6a;
+}
+.e input:focus ,.p input:focus
+{
+    box-shadow: inset 0 0 0 2px #000000;
+}
+
+
+.forgot
+{
+    color: inherit;
+    font-size: 14px;
+}
+.forgot:hover
+{
+    text-decoration: underline;
+}
+.remembermeandmark
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 16px;
+}
+.remembermeandmark .leftgroup
+{
+    padding-bottom: 16px;
+}
+.remembermeandmark .leftgroup .checkbox
+{
+    display: flex;
+    align-items: center;
+}
+.remembermeandmark .leftgroup .checkbox input
+{
+    
+    cursor: default;
+    appearance: none;
+    background-color: white;
+    border: 1px solid gray;
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    margin-top: -4px;
+    margin-right: 10px;
+}
+.remembermeandmark .leftgroup .checkbox input:checked
+{
+    
+    cursor: default;
+    appearance: none;
+    background-image: url(imgs/mark3.png);
+    border: 1px solid gray;
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    margin-top: -4px;
+    margin-right: 10px;
+
+}
+.remembermeandmark .leftgroup .checkbox label
+{
+    display:flex;
+    cursor: default;
+
+}
+
+
+.remembermeandmark .rightgroup
+{
+
+    display: flex;
+
+}
+.remembermeandmark .rightgroup .loginbutton
+{
+    width: 124px;
+    height: 48px;
+    border-radius: 48px;
+    background-color:#1ED760;
+    border: 1px;
+}
+.remembermeandmark .rightgroup .loginbutton:hover
+{
+    outline:1px solid #1ED760;
+}
+@media only screen and (max-width:766px)
+{
+    .remembermeandmark .rightgroup .loginbutton
+    {
+        width:450px;
+    }
+}
+.signup p
+{
+    font-size: 16px;    
+    margin: 30px 0 20px 0;
+
+}
+    
+.signup .signupbutton
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:450px;
+    height:48px;
+    border-radius:48px;
+    border: none;
+    border: 1px solid #878787;
+    background-color: white;
+}
+.signup .signupbutton:hover
+{
+    border:1px solid#000000;
+}
+.signup .signupbutton span
+{
+    color: #6a6a6a;
+    font-size: 14px;
+}

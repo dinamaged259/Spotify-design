@@ -1,0 +1,750 @@
+@font-face {
+    font-family:'spotify';
+    src: url(Spotify-Font/GothamBold.ttf);
+}
+body
+{
+    font-family:'spotify';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    grid-template-rows:80px auto 400px ;
+    grid-template-areas: "head" "main" "foot";
+    background: rgb(0, 0, 0); 
+    
+
+}
+.bar
+{
+    position: absolute;
+    left: -100px;
+    z-index: -1;
+    background-image: linear-gradient(to bottom right ,#05ff5c ,#0f993f,  #02270f81 70%,black 3%);
+    
+    filter: blur(8px);
+    border-radius: 200px;
+    border-top-left-radius:0px ;
+    width: 150%;
+    height: 25%;
+}
+header
+{
+    
+    grid-area:head;
+    width: 100%;
+    height: 80px;
+    min-height: 54px;
+    color: white;
+}
+
+.parent
+{
+    
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width:1170px; 
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo
+{
+    background-color:transparent    ;
+    display: inline-block;
+    justify-content: center;
+    align-self: center;
+    height: 40px;
+    width:100px;
+}
+
+.alogo
+{
+    display: flex;
+    background-image:url(imgs/Spotify_Logo_RGB_White.png); 
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 500%;
+      
+}
+.lo1{
+    height: 150%;
+    width: 200%;
+    border-color: rgb(31, 31, 31);
+    background-color: aquamarine;
+    box-shadow:10px 0px 100px 100px rgb(19, 67, 19);
+    border-radius: 35px;
+}
+
+
+
+
+.navax >ul{
+
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.navax > ul > li{
+    float:left;
+}
+.navax
+{
+    padding: 28px 17px;
+    text-decoration: none;
+    display: block;
+    font-weight: 700;
+    word-spacing: 0px; 
+    color: white; 
+    font-size: 14.8px;
+}
+.navax:hover
+{
+    color: #1ed760;
+}
+.navax:focus ~ .sub-content{
+    max-height: 400px;
+    transition: 0.5s ease-in;
+ }
+
+    .icon{
+    display: inline-block;
+    position: relative;
+    top: -9px;
+}
+    .picon
+{
+    display: inline-block;
+    position: relative;
+    top: -14px;
+}
+
+.sub-content{
+    position: absolute;
+    top: 60px;
+    overflow: hidden;
+    background-color: rgb(255, 240, 240);
+    max-height: 0px;
+    z-index: 6;
+ }
+ .sub-content a{
+    color: rgb(22, 21, 21);
+    text-decoration: none;
+    padding: 30px 20px ;
+
+ }
+ .sub-drop{
+    padding: 0px;
+ }
+ .sub-drop ul{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+ }
+ .sub-drop ul li a{
+    display: inline-block;
+    padding: 10px 10px;
+    font:bold;
+
+ }
+ .sub-drop ul li a:hover{
+    color: #1ed760;
+ }
+ .nava:focus ~ .sub-content{
+    position: static;
+    z-index: 101;
+    max-height: 400px;
+    transition: 0.5s ease-in;
+ }
+
+
+.nav1
+{
+    display: inline-block;
+
+}
+.navul
+{
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    list-style:none;
+    /* box-shadow:0px 0px 50px 50px rgb(19, 67, 19); */
+}
+.seperator1
+{
+
+    display: flex;
+    align-items: center;
+    height:80px;
+    color: white;
+    padding: 0 15px;
+    
+}
+.nava
+{
+    padding: 28px 17px;
+    text-decoration: none;
+    display: block;
+    font-weight: 700;
+    word-spacing: 0px; 
+    color: white;
+    font-size: 14.8px;
+}
+.nava:hover
+{
+    color: #1ed760;
+}
+
+
+main                 /*main*/
+{
+    grid-area: main;
+    width: 100%;
+    min-height: 1000px;
+}
+
+
+
+.footer
+{   grid-area: foot;
+    background-color: black;
+    width:100%;
+    height: 400px;
+    padding: 80px 0 50px;
+}
+footer
+{
+    background-color: black;
+    padding: auto 0;
+    
+    
+
+}
+.nav2
+{
+    background-color: black;
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 75px; 
+    max-width: 1170px;
+    
+    
+
+    
+}
+
+
+.logo2
+{
+    background-color:black;
+    display: inline-block;
+    justify-content: center;
+    align-self: flex-start;
+    margin: 0 15px;
+    height: 40px;
+    width: 132px;
+}
+/* .alogo
+{
+    display: flex;
+    background-image:url(imgs/black\ logo2.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    
+    
+} */
+.loog2{
+    height: 100%;
+    width: 100%;
+    border-color: rgb(31, 31, 31);
+    background-color: rgb(13, 27, 23);
+    border-radius: 35px;
+
+}
+
+.sites
+{
+    width: 50%;
+    flex: 0 0 auto;
+    flex-direction: row;
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 15px 0 0 25px;
+}
+a
+{
+    text-decoration: none;
+}
+.sites dl{
+    list-style: none;
+    margin: 0px auto;
+    color: #919496;
+    font-size:13px; 
+    word-spacing: 0px;
+    height: 345px;
+    font-weight: 900;
+    
+}
+.sites dl dd 
+{
+    padding: 0;
+    margin: 20px 0;
+    list-style: none;
+    color: white;
+    
+    
+}
+.sites dl dd a
+{
+    color: white;
+    font-weight: 550;
+    font-size:15px; 
+    word-spacing: 0px;
+}
+.social
+{
+    margin: 15px 0 0 auto;
+    
+}
+.social ul
+{
+    display: inline-flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0 15px 0 auto;
+    padding: 0;
+}
+.social ul li 
+{
+    display:flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+
+}
+.social ul li .insta
+{
+    background-image: url(imgs/insta\ \(2\).png);
+    background-size: cover;
+    width: 54px;
+    height: 54px;
+    display: flex;
+}
+.social ul li .insta .instain
+{
+    justify-content: center;
+    align-items: center;
+    background-image: url(imgs/insta\ \(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 54px;
+    height: 54px;
+}
+.ss1{
+    height: 100%;
+    width: 100%;
+    border-color: rgb(31, 31, 31);
+    background-color: rgb(13, 27, 23);
+    border-radius: 35px;
+
+}
+.social ul li .twitter 
+{
+    background-image: url(imgs/twiter\ \(1\)\ \(2\).png);
+    background-size: cover;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    margin:0 15px;
+}
+.social ul li .twitter .twitterin
+{
+    justify-content: center;
+    align-items: center;
+    background-image: url(imgs/twiter\ \(1\)\ \(1\).png);
+    background-size: cover;
+    width: 54px;
+    height: 54px;
+}
+.tt1{
+    height: 100%;
+    width: 100%;
+    border-color: rgb(31, 31, 31);
+    background-color: rgb(13, 27, 23);
+    border-radius: 35px;
+
+}
+.social ul li .face
+{
+    background-image: url(imgs/face\ \(2\).png);
+    background-size: cover;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    
+}
+.social ul li .face .facein
+{
+    justify-content: center;
+    align-items: center;
+    background-image: url(imgs/face\ \(1\).png);
+    background-size: cover;
+    width: 54px;
+    height: 54px;
+}
+.ff1{
+    height: 100%;
+    width: 100%;
+    border-color: rgb(31, 31, 31);
+    background-color: rgb(13, 27, 23);
+    border-radius: 35px;
+
+}
+
+.lang
+{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin: 0 15px;
+    width: 100%;
+    font-size: 12px;
+}
+.endline 
+{
+    display: inline-flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    width: 100%;
+}
+.endline .left
+{
+    justify-content: flex-start;
+}
+.endline .left ul
+{
+    display: flex;
+    word-spacing: 0px;
+    list-style: none;
+}
+.endline .left ul li
+{
+    margin: 0 10px;
+    font-size: 12px;
+}
+.endlinea , .langa
+{
+    color: #919496;
+}
+.endline .righte
+{
+    justify-content: flex-end;
+    font-size: 14px;
+    color: white;
+    margin-right: 15px;
+}
+span{
+    word-spacing: 0px;
+    color: #919496;
+    font-size: 12px;
+}
+/* hover for insta face twitter */
+
+    .instain:hover
+    {
+        background-image: url(imgs/insta\ \(3\).png);
+        background-repeat: no-repeat;
+        width: 500px;
+        height: 500px;
+    }
+    .social ul li .insta .instain:hover
+    {
+        background-image:url(imgs/insta3.png);
+    }
+    
+    .social ul li .twitter .twitterin:hover
+    {
+    
+    background-image: url(imgs/twiter3.png);
+    }
+    .social ul li .face .facein:hover
+    {
+    background-image:url(imgs/face3.png);
+    }
+
+.sites dl dd a:hover,.endlinea:hover , .langa:hover
+{
+    color: #1ed760;
+}
+h4{
+   margin-top: 3%;
+    padding-left: 26%;
+    padding-right: 30%;
+    background-color: rgb(0, 0, 0);
+    height: 0px;
+}
+h1{
+  width: 50%;
+  margin-top: 4%;
+    height: 20px;
+    font-size: 66px;
+    left: 20%;
+    background-color: rgb(0, 0, 0);
+    padding-left: 26%;
+    padding-right: 30%;
+    height: 200px;
+    
+}
+
+.log{
+    width: 50%;
+    height: 0px;
+    font-size: 25px;
+    margin: 50px;
+    padding-left: 23%;
+    background-color: black;
+
+}
+.log1{
+    color: aliceblue;
+}
+.log1:hover
+{
+    color: aqua;
+    text-decoration-line:none;
+}
+
+
+.s2{
+    background-color: rgb(0, 0, 0);
+    left: 20%;
+    padding-left: 27%;
+    height: 100px;
+    
+}
+input{
+    position: relative;
+    display:inline block;
+    font-size: 20px;
+    box-sizing: border-box;
+    height: 50px;
+    width: 63%;
+    
+}
+img{
+    width: 30px;
+    top:50px;
+    left: 100px;
+    border-style: double;
+    background-color: black;
+    height: auto;
+    border-radius: 35px;
+}
+.h11{
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: black;
+ 
+}
+
+.box1{
+    
+    width: 180px;
+    height: 90px;
+    background-color: rgb(166, 18, 102);
+    margin-left: 27%;
+    box-sizing: border-box;
+    font-size: 20px;
+    text-align:center;
+    border-radius: 5px;
+}
+.box2{
+    
+    width: 180px;
+    height: 90px;
+    background-color: rgb(120, 17, 17);
+    margin-left: 2%;
+    box-sizing: border-box;
+    font-size: 20px;
+    text-align:center;
+    border-radius: 5px;
+}
+.box3{
+    
+    width: 180px;
+    height: 90px;
+    background-color: rgb(137, 74, 48);
+    margin-left: 2%;
+    box-sizing: border-box;
+    font-size: 20px;
+    text-align:center;
+    border-radius: 5px;
+}
+.h22{
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: black;
+ 
+}
+
+.box4{
+    
+    width: 180px;
+    height: 90px;
+    background-color: rgb(18, 166, 85);
+    margin-left: 27%;
+    box-sizing: border-box;
+    font-size: 20px;
+    text-align:center;
+    border-radius: 5px;
+}
+.box5{
+    
+    width: 180px;
+    height: 90px;
+    background-color: rgb(91, 86, 86);
+    margin-left: 2%;
+    box-sizing: border-box;
+    font-size: 20px;
+    text-align:center;
+    border-radius: 5px;
+}
+.box6{
+    
+    width: 180px;
+    height: 90px;
+    background-color: rgb(53, 71, 161);
+    margin-left: 2%;
+    box-sizing: border-box;
+    font-size: 20px;
+    text-align:center;
+    border-radius: 5px;
+
+}
+
+.quick{
+    background-color: rgb(18, 18, 18);
+}
+
+.q1{
+    padding-left: 27%;
+}
+.ln1{
+    padding-left: 25%;
+    font-size: 20px;
+    color: rgb(165, 165, 165);
+}
+
+.aa{
+    color: rgb(100, 99, 99);
+    
+}
+.aa1{
+    padding-left: 30%;
+}
+.aa:hover
+{
+    color: white;
+    text-decoration-line:none;
+}
+.a2{
+    color: rgb(100, 99, 99);
+    
+}
+.aa2 {
+    padding-left: 22.5%;
+}
+
+.a2:hover
+{
+    color: white;
+    text-decoration-line:none;
+}
+.a3{
+    color: rgb(100, 99, 99);
+    
+}
+.aa3 {
+    padding-left: 30.5%;
+}
+
+.a3:hover
+{
+    color: white;
+    text-decoration-line:none;
+}
+.a4{
+    color: rgb(100, 99, 99);
+    
+}
+.aa4{
+    padding-left: 32.5%;
+}
+
+.a4:hover
+{
+    color: white;
+    text-decoration-line:none;
+}
+.a5{
+    color: rgb(100, 99, 99);
+    
+}
+.aa5{
+    padding-left: 22.5%;
+}
+
+.a5:hover
+{
+    color: white;
+    text-decoration-line:none;
+}
+.v1{
+    padding-left: 32%;
+    color: aliceblue;
+    font-size: 45px;
+ 
+}
+p{
+    padding-left: 27%; 
+    color: antiquewhite; 
+   
+}
+.Go{
+    color: black;
+}
+.Go:hover
+{
+    color: rgb(38, 0, 255);
+    text-decoration-line:none;
+}
+.box9{
+ display: flex;
+ margin-left: 41%;
+ padding-left: 2%; 
+ width: 180px;
+ height: 50px;
+ background-color: #1ed760;;
+font-weight: 100px;
+line-height: 50px;
+ font-size: 20px;
+ border-radius: 35px;
+ font-style: italic bold 30px 50px Arial;
+border-inline-style: red;
+ 
+
+}
+.vs1{
+   background-color: #030303;
+}

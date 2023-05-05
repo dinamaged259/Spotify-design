@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="shortcut icon" href="imgs/spotify1.png" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+</head>
+<body>
+    <main>
+        <div class="main">
+            <div class="a1">
+                <a href="premium.html"><img src="imgs/spotlogo.png" alt=""></a>
+                <h2>Sign up for free to start listening.</h2>
+            </div>
+            <div class="a2">
+                <a href=""><img style="transform: scale(.5);" src="imgs/facebar.png" alt=""></a>
+            </div>
+            <div class="a3">
+                <a href=""><img style="transform: scale(.5);" src="imgs/googlebar.png" alt=""></a>
+            </div>
+            <div class="seperator">
+                <div class="hr"></div><span>OR</span><div class="hr"></div>
+            </div>
+            <form action="">
+                <div class="e">
+                    <label for="email">What's your email?</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="ce">
+                    <label for="cemail">Confirm your email</label>
+                    <input type="email" id="cemail">
+                </div>
+                <div class="p">
+                    <label for="password">Create a password
+                    </label>
+                    <input type="password" id="passwordd"></div>
+                <div class="n">
+                    <label for="name">What should we call you?</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="data">
+                    <label for="">What's your date of birth?</label>
+                    <input type="date">
+                </div>
+                <label for="">What's your gender?</label>
+                
+                    <div class="radios">
+                        <input type="radio" name="gander" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gander" id="female">
+                        <label for="female">Female</label>
+                        <input type="radio" name="gander" id="prefernottosay">
+                        <label for="prefernottosay">Prefer not to say</label>
+                    </div>
+                
+                <div class="check1">
+                    <input type="checkbox" id="check1">
+                    <label for="check1">Please send me news and offers from Spotify</label>
+                </div>
+                <br>
+                 <div class="check2"> 
+                <input type="checkbox" id="check2">
+                    <label for="check2">Share my registration data with Spotify's content providers for marketing purposes.</label>
+                 </div> 
+                <div class="downtext">
+                    <p>By clicking on sign-up, you agree to Spotify's <a href="">Terms and Conditions of Use</a>.</p>
+                    <p>
+                        To learn more about how Spotify collects, uses, shares and protects your personal data, please see <a href="">Terms and Conditions of Use</a>.</p>
+                </div>
+                <div class="signup">
+                    <button class="btn" id="signupbtn">
+                        <span>Sign up</span>
+                    </button>
+                </div>
+                <div class="haveacc">
+                    <p>Have an account?<a href="login.html">Log in</a>.</p>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+    <script>
+            var signupbutton = document.getElementById('signupbtn');
+    let index=5;
+    signupbutton.onclick = function newuser()
+    {
+        var name = document.getElementById('name').value;
+        var passwordd = document.getElementById('passwordd').value; 
+        users[index].username==name;
+        users[index].password==passwordd;
+        index++;
+    }
+    </script>
+
+    <!-- <script src="login.js"></script> -->
+</body>
+</html>

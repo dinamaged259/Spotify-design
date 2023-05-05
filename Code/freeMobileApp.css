@@ -1,0 +1,782 @@
+@font-face {
+    font-family:'spotify';
+    src: url(Spotify-Font/GothamBold.ttf);
+}
+body
+{
+    font-family:'spotify';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* min-height: 900px;  */
+    grid-template-rows:80px auto 400px ;
+    grid-template-areas: "head" "main" "foot";
+
+}
+header
+{
+    grid-area:head;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    min-height: 54px;
+    color: white;
+}
+
+.parent
+{
+    background-color: black;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width:1170px; 
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo
+{
+    background-color:black;
+    display: inline-block;
+    justify-content: center;
+    align-self: center;
+    margin: auto 0;
+    height: 40px;
+    width: 132px;
+}
+.alogo
+{
+    display: flex;
+    background-image:url(imgs/black\ logo2.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+
+.navax >ul{
+
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.navax > ul > li{
+    float:left;
+}
+.navax
+{
+    padding: 28px 17px;
+    text-decoration: none;
+    display: block;
+    font-weight: 700;
+    word-spacing: 0px; 
+    color: white; 
+    font-size: 14.8px;
+}
+.navax:hover
+{
+    color: #1ed760;
+}
+.navax:focus ~ .sub-content{
+    max-height: 400px;
+    transition: 0.5s ease-in;
+ }
+
+    .icon{
+    display: inline-block;
+    position: relative;
+    top: -9px;
+}
+    .picon
+{
+    display: inline-block;
+    position: relative;
+    top: -14px;
+}
+
+.sub-content{
+    position: absolute;
+    top: 60px;
+    overflow: hidden;
+    background-color: rgb(255, 240, 240);
+    max-height: 0px;
+    z-index: 6;
+ }
+ .sub-content a{
+    color: rgb(22, 21, 21);
+    text-decoration: none;
+    padding: 30px 20px ;
+
+ }
+ .sub-drop{
+    padding: 0px;
+ }
+ .sub-drop ul{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+ }
+ .sub-drop ul li a{
+    display: inline-block;
+    padding: 10px 10px;
+    font:bold;
+
+ }
+ .sub-drop ul li a:hover{
+    color: #1ed760;
+ }
+ .nava:focus ~ .sub-content{
+    position: static;
+    z-index: 101;
+    max-height: 400px;
+    transition: 0.5s ease-in;
+ }
+
+
+.nav1
+{
+    display: inline-block;
+}
+.navul
+{
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    list-style:none;
+}
+.seperator1
+{
+
+    display: flex;
+    align-items: center;
+    height:80px;
+    color: white;
+    padding: 0 15px;
+    
+}
+.nava
+{
+    padding: 28px 17px;
+    text-decoration: none;
+    display: block;
+    font-weight: 700;
+    word-spacing: 0px; 
+    color: white;
+    font-size: 14.8px;
+}
+.nava:hover
+{
+    color: #1ed760;
+}
+.sub-content{
+    position: absolute;
+    top: 60px;
+    overflow: hidden;
+    background-color:white;
+    max-height: 0;
+    z-index: 6;
+    
+
+}
+.sub-content a{
+    color:black;
+    text-decoration: none;
+    padding: 30px 20px;
+    
+}
+.sub-drop{
+    padding: 0;   
+}
+.sub-drop ul{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+}
+.sub-drop ul li a{
+    display: inline-block;
+    padding: 10px 20px;
+    font:bold;
+    
+}
+.sub-drop ul li a:hover{
+    color: #1ed760;
+}
+.menu-item:focus ~ .sub-content{
+    max-height: 400px;
+}
+.a1{
+    width: 100%;
+    height: 400px;
+    background-image:linear-gradient(-45deg, rgb(108, 14, 224) -5%, rgb(240, 55, 166));
+    position: relative;
+    z-index: 1;
+    
+}
+  .background img{
+    top: 0px;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    opacity: 0.4;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 2;
+    
+}
+.content p{
+    position: absolute;
+    font-family: sans-serif;
+    font-weight: 100;
+    width: 40%;
+    color: #fff;
+    margin-left: 500px;
+    padding-top: 100px;
+    font-size: 50px;
+    z-index: 3;
+}
+.content  a{
+    position: relative;
+    text-decoration: none;
+    background-color: #fff;
+    color: black;
+    padding:8px 15px;
+    border-radius: 20px;
+    font-weight: 100;
+    margin-left: 500px;
+    z-index: 4;
+    top: 300px;
+    display: inline-block;
+
+}
+.content a:hover{
+    color: #1ed760;
+    height: 20px;
+
+}
+.phone img{
+    top: 50px;
+    width: 200px;
+    height: 350px;
+    background-size: 400px;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 5;
+    margin-left: 250px;
+    border-radius: 20px;
+
+
+}
+
+.b1 h1{
+    font-family: sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    
+    
+
+}
+.c1{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+    
+}
+
+.div1{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width:200px;
+  
+    
+
+}
+.div2 img{
+    width:100px;
+    height: 100px;
+    display: inline-block;
+    margin-right: 60px;
+    margin-left: 150px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    
+
+
+}
+.text h3{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    width: 300%;
+
+   
+    
+}
+.text p{
+    font-family: sans-serif;
+    color: black;
+    width: 300%;
+    
+   
+
+}
+.div3{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width:200px;
+  
+    margin-right: 300px;
+
+}
+
+.div4 img{
+    width:100px;
+    height: 100px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 50px;
+
+}
+.text2 h3{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+    width: 300%;
+  
+
+}
+.text2 p{
+    font-family: sans-serif;
+    color: black;
+    width: 400%;
+    bottom:50px;
+}
+.c2{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+
+}
+.n1{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width:200px;
+}
+.n2 img{
+    width:100px;
+    height: 100px;
+    display: inline-block;
+    margin-right: 60px;
+    margin-left: 150px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+
+}
+.text3 h3{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    width: 300%;
+
+}
+.text3 p{
+    font-family: sans-serif;
+    color: black;
+    width: 300%;
+
+}
+.n3{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width:200px;
+  
+    margin-right: 300px;
+
+}
+.n4 img{
+    width:100px;
+    height: 100px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+.text4 h3{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+    width: 300%;
+
+}
+.text4 p{
+    font-family: sans-serif;
+    color: black;
+    width: 400%;
+    bottom:50px;
+
+}
+.class{
+    width: 100%;
+    height: 400px;
+    background-image:linear-gradient(-45deg, rgb(108, 14, 224) -5%, rgb(240, 55, 166));
+
+}
+.class1{
+    font-family: sans-serif;
+    color:white;
+    font-weight: 100;
+    text-align: center;
+   padding-top: 150px;
+
+}
+.l{
+    padding: 60px;
+}
+.head h1{
+    color:black;
+    font-family: sans-serif;
+    font-weight: 300px;
+    text-align: center;
+   padding-top: 50px;
+}
+
+details{
+    margin-bottom: 2rem;
+    border: 1px solid gainsboro;
+    padding: 20px;
+    border-radius: 6px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+
+    
+}
+summary :hover{
+    text-decoration: underline;
+}
+
+
+ .foot{
+
+    width: 100%;
+    height: 400px;
+    background-image:linear-gradient(-45deg, rgb(108, 14, 224) -5%, rgb(240, 55, 166));
+}
+  
+.foot1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-image: url(imgs/lets-play.svg);
+    transform: rotate(-180deg);
+    position: absolute;
+    z-index: 211;
+    
+}
+
+
+.foot1 p{
+    font-family: sans-serif;
+    font-weight: 150;
+    width: 40%;
+    color: #fff;
+    font-size: 60px;
+    position: absolute;
+    z-index: 221;
+    font-weight: 900;
+    transform: rotate(-180deg);
+}
+.foot1 a{
+    position: absolute;
+    text-decoration: none;
+    background-color:#fff;
+    color: black;
+    padding:8px 15px;
+    border-radius: 20px;
+    font-weight: 100;
+    display: inline-block;
+    font-size: 20px;
+    width: 200px;
+    
+    z-index: 4;
+    left: 140px;
+    top: 65px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    
+}
+.foot1 a:hover{
+    color: #1ed760;
+    transform: scale(1.02);
+
+    
+}
+
+.footer
+{   grid-area: foot;
+    background-color: black;
+    width:100%;
+    height: 400px;
+    padding: 80px 0 50px;
+}
+footer
+{
+    background-color: black;
+    padding: auto 0;
+    
+    
+
+}
+.nav2
+{
+    background-color: black;
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 75px; 
+    max-width: 1170px;
+    
+    
+
+    
+}
+
+
+.logo2
+{
+    background-color:black;
+    display: inline-block;
+    justify-content: center;
+    align-self: flex-start;
+    margin: 0 15px;
+    height: 40px;
+    width: 132px;
+}
+.alogo
+{
+    display: flex;
+    background-image:url(imgs/black\ logo2.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    
+    
+}
+
+.sites
+{
+    width: 50%;
+    flex: 0 0 auto;
+    flex-direction: row;
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 15px 0 0 25px;
+}
+a
+{
+    text-decoration: none;
+}
+.sites dl{
+    list-style: none;
+    margin: 0px auto;
+    color: #919496;
+    font-size:13px; 
+    word-spacing: 0px;
+    height: 345px;
+    font-weight: 900;
+    
+}
+.sites dl dd 
+{
+    padding: 0;
+    margin: 20px 0;
+    list-style: none;
+    color: white;
+    
+    
+}
+.sites dl dd a
+{
+    color: white;
+    font-weight: 550;
+    font-size:15px; 
+    word-spacing: 0px;
+}
+.social
+{
+    margin: 15px 0 0 auto;
+    
+}
+.social ul
+{
+    display: inline-flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0 15px 0 auto;
+    padding: 0;
+}
+.social ul li 
+{
+    display:flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+
+}
+.social ul li .insta
+{
+    background-image: url(imgs/insta\ \(2\).png);
+    background-size: cover;
+    width: 54px;
+    height: 54px;
+    display: flex;
+}
+.social ul li .insta .instain
+{
+    justify-content: center;
+    align-items: center;
+    background-image: url(imgs/insta\ \(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 54px;
+    height: 54px;
+}
+.social ul li .twitter 
+{
+    background-image: url(imgs/twiter\ \(1\)\ \(2\).png);
+    background-size: cover;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    margin:0 15px;
+}
+.social ul li .twitter .twitterin
+{
+    justify-content: center;
+    align-items: center;
+    background-image: url(imgs/twiter\ \(1\)\ \(1\).png);
+    background-size: cover;
+    width: 54px;
+    height: 54px;
+}
+.social ul li .face
+{
+    background-image: url(imgs/face\ \(2\).png);
+    background-size: cover;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    
+}
+.social ul li .face .facein
+{
+    justify-content: center;
+    align-items: center;
+    background-image: url(imgs/face\ \(1\).png);
+    background-size: cover;
+    width: 54px;
+    height: 54px;
+}
+
+.lang
+{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin: 0 15px;
+    width: 100%;
+    font-size: 12px;
+}
+.endline 
+{
+    display: inline-flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    width: 100%;
+}
+.endline .left
+{
+    justify-content: flex-start;
+}
+.endline .left ul
+{
+    display: flex;
+    word-spacing: 0px;
+    list-style: none;
+}
+.endline .left ul li
+{
+    margin: 0 10px;
+    font-size: 12px;
+}
+.endlinea , .langa
+{
+    color: #919496;
+}
+.endline .righte
+{
+    justify-content: flex-end;
+    font-size: 14px;
+    color: white;
+    margin-right: 15px;
+}
+span{
+    word-spacing: 0px;
+    color: #919496;
+    font-size: 12px;
+}
+/* hover for insta face twitter */
+
+    .instain:hover
+    {
+        background-image: url(imgs/insta\ \(3\).png);
+        background-repeat: no-repeat;
+        width: 500px;
+        height: 500px;
+    }
+    .social ul li .insta .instain:hover
+    {
+        background-image:url(imgs/insta3.png);
+    }
+    
+    .social ul li .twitter .twitterin:hover
+    {
+    
+    background-image: url(imgs/twiter3.png);
+    }
+    .social ul li .face .facein:hover
+    {
+    background-image:url(imgs/face3.png);
+    }
+
+.sites dl dd a:hover,.endlinea:hover , .langa:hover
+{
+    color: #1ed760;
+}
+.endlinea:hover
+{
+    transform: scale(20px,20px);
+}
